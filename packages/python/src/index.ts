@@ -713,7 +713,12 @@ from vercel_runtime.vc_init import vc_handler
     supportsResponseStreaming: true,
   });
 
-  return { output };
+  return {
+    output,
+    ...(djangoStatic?.cdnOutputDir
+      ? { staticFilesPath: djangoStatic.cdnOutputDir }
+      : {}),
+  };
 };
 
 export { startDevServer };
