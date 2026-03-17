@@ -571,6 +571,7 @@ export interface Service {
   handlerFunction?: string;
   /* worker service config */
   topic?: string;
+  topics?: string[];
   consumer?: string;
 }
 
@@ -787,6 +788,7 @@ export interface ExperimentalServiceConfig {
 
   /* Worker service config */
   topic?: string;
+  topics?: string[];
   consumer?: string;
 }
 
