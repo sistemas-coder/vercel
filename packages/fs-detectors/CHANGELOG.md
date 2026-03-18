@@ -1,5 +1,13 @@
 # @vercel/fs-detectors
 
+## 5.11.1
+
+### Patch Changes
+
+- Switch "node" framework preset to use @vercel/backends ([#15248](https://github.com/vercel/vercel/pull/15248))
+
+  Fix services-mode internal function output aliasing to use slashless `_svc/*` output keys so Node service routes can resolve their Lambda targets.
+
 ## 5.11.0
 
 ### Minor Changes
