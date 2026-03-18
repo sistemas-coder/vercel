@@ -96,6 +96,7 @@ export { selectPython, selectPythonVersion } from './manifest/python-selector';
 // =============================================================================
 
 export { PythonAnalysisError } from './util/error';
+export { parseConfig } from './util/config';
 
 // =============================================================================
 // Schemas (runtime validation)
@@ -198,6 +199,7 @@ export {
 // =============================================================================
 
 export {
+  parsePythonVersionFile,
   parseUvPythonRequest,
   serializePythonRequest,
   writePythonVersionFile,
